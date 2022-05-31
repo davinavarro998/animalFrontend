@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Animal Game</title>
+</head>
+<body>
+    <header>
+        <h1>Animal Game</h1>
+        <h2>Animal address: <span id="animal_address"></span></h2>
+        <h2>Auction address: <span id="auction_address"></span></h2>
+    </header>
+    <main>
+        <div class="container">
+            <p id="countdown_clock"></p>
+            <img src="" alt="nft_image" id="token_image">
+            <p id="token_id"></p>
+            <p>Leader: <span id="highest_bidder"></span></p>
+            <p>Highest bid = <span id="highest_bid">5</span> ETH</p>
+            <button id="bid_button">Bid</button>
+            <input type="number" placeholder="amount" step="0.001" min="0" id="bid_input">
+            <button id="new_auction_button">New Auction</button>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.0/web3.min.js"
+        integrity="sha512-RGPKVfQewHGfk9yaB7ThGPKAQU+civS5awsfStLg22jrWbqgDkNzPtIwNFpFApr3ccjB730SRxi+KnDjhIuTpw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
